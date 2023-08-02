@@ -1,10 +1,11 @@
 import React from "react";
 
 function WeatherItem({ weather }) {
-  const { icon, tempmax, tempmin } = weather;
+  const { tempmax, tempmin } = weather;
   return (
     <div>
-      {icon}, {tempmax}, {tempmin}
+      {<img src={require(`../assets/icons/${icon}.svg`)} />}, {tempmax},{" "}
+      {tempmin}
     </div>
   );
 }
