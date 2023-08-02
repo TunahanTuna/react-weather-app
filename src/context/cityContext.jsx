@@ -4,7 +4,7 @@ import { fetchCities } from "../core/fetchData";
 export const CityContext = createContext();
 
 export const CityProvider = ({ children }) => {
-  const [cities, setCities] = useState();
+  const [cities, setCities] = useState([]);
   useEffect(() => {
     const fetchData = async () => {
       const response = await fetchCities();

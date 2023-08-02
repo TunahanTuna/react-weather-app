@@ -5,7 +5,7 @@ import axios from "axios";
 export const weatherContext = createContext();
 
 export const WeatherProvider = ({ children }) => {
-  const [weathers, setWeathers] = useState();
+  const [weathers, setWeathers] = useState([]);
   useEffect(() => {
     const deneme = async () => {
       const weathersData = await fetchWeathers();
@@ -13,6 +13,8 @@ export const WeatherProvider = ({ children }) => {
     };
     deneme();
   }, []);
+  console.log(weathers);
+
   const values = {
     weathers,
     setWeathers,
