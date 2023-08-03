@@ -8,8 +8,8 @@ export const WeatherProvider = ({ children }) => {
   const [weathers, setWeathers] = useState([]);
   useEffect(() => {
     const deneme = async () => {
-      //const weathersData = await fetchWeathers();
-      //setWeathers(weathersData);
+      const weathersData = await fetchWeathers();
+      setWeathers(weathersData);
     };
     deneme();
   }, []);

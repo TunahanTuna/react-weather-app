@@ -54,4 +54,4 @@ const partlyCloudyDay = (props) => (
     </g>
   </svg>
 );
-export default { item: partlyCloudyDay, name: "patly-cloudy-day" };
+export default { item: partlyCloudyDay, name: "partly-cloudy-day" };
