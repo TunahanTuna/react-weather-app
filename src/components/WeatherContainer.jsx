@@ -15,11 +15,9 @@ function WeatherContainer() {
         <DaySelector />
       </div>
       <div className="weather-main">
-        {weathers
-          .filter((w, index) => index != weathers.length - 1)
-          .map((w) => (
-            <WeatherItem key={w.datetime} weather={w} />
-          ))}
+        {weathers.map((w) => (
+          <WeatherItem key={w.datetime} weather={w} />
+        ))}
       </div>
     </div>
   );

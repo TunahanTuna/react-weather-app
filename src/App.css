@@ -57,7 +57,8 @@
   margin: 0.3em;
   padding: 1.5em;
   border-radius: 1em;
-  min-width: 125px;
+  width: 100px;
+  height: 150px;
 }
 .weather-subcontainer {
   display: flex;
