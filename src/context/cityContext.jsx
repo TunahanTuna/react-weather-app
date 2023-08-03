@@ -5,6 +5,7 @@ export const CityContext = createContext();
 
 export const CityProvider = ({ children }) => {
   const [cities, setCities] = useState([]);
+  const [selected, setSelected] = useState("kastamonu");
   useEffect(() => {
     const fetchData = async () => {
       const response = await fetchCities();
@@ -13,6 +14,6 @@ export const CityProvider = ({ children }) => {
     fetchData();
   }, []);
 
-  const values = { cities };
+  const values = { cities, selected, setSelected };
   return <CityContext.Provider value={values}>{children}</CityContext.Provider>;
 };

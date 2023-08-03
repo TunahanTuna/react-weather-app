@@ -3,9 +3,19 @@ import { weatherContext } from "../context/weatherContext";
 import WeatherItem from "./WeatherItem";
 import { conditions } from "../icons";
 import DaySelector from "./DaySelector";
+import { CityContext } from "../context/cityContext";
+import { fetchWeathers } from "../core/fetchData";
 function WeatherContainer() {
-  const { weathers } = useContext(weatherContext);
-
+  const { weathers, setWeathers } = useContext(weatherContext);
+  const { selected } = useContext(CityContext);
+  useEffect(() => {
+    const deneme = async () => {
+      const weathersData = await fetchWeathers(selected);
+      setWeathers(weathersData);
+    };
+    deneme();
+    console.log(weathers);
+  }, [selected]);
   return (
     <div>
       <div>

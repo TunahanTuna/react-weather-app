@@ -59,6 +59,7 @@
   border-radius: 1em;
   width: 100px;
   height: 150px;
+  font-weight: 500;
 }
 .weather-subcontainer {
   display: flex;
@@ -79,5 +80,26 @@
 }
 .today {
   font-weight: bold;
-  background-color: rgb(144, 180, 76);
+  background-color: rgb(156, 158, 55);
+}
+.day-seletor--container {
+  padding: 0 0 2em 0;
+  width: 100%;
+}
+
+select {
+  padding: 1em;
+  border-radius: 1em;
+  min-width: 200px;
+  background-color: burlywood;
+  color: black;
+  font-weight: bold;
+}
+option {
+  padding: 1em;
+  border-radius: 1em;
+  min-width: 200px;
+  background-color: burlywood;
+  color: black;
+  font-weight: bold;
 }
