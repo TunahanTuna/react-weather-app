@@ -13,7 +13,6 @@ export const WeatherProvider = ({ children }) => {
     };
     deneme();
   }, []);
-  console.log(weathers);
 
   const values = {
     weathers,

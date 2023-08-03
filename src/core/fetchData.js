@@ -312,7 +312,6 @@ export const fetchWeathers = async () => {
 };
 
 export const fetchCities = async () => {
-  //const { data } = await axios.get(import.meta.env.VITE_CITY_API_URL);
-  return [];
+  const { data } = await axios.get(import.meta.env.VITE_CITY_API_URL);
   return data && data.data;
 };

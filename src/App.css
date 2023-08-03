@@ -52,13 +52,31 @@
   justify-content: center;
   align-items: center;
   padding: 1em;
+  background-color: burlywood;
+  color: black;
+  margin: 0.3em;
+  padding: 1.5em;
+  border-radius: 1em;
+  min-width: 125px;
 }
 .weather-subcontainer {
   display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0.5em;
+  font-size: 0.95em;
 }
 .weather-max {
   padding-right: 1em;
 }
 .weather-main {
   display: flex;
+}
+.weather-day {
+  margin-bottom: 1em;
+}
+.today {
+  font-weight: bold;
+  background-color: rgb(144, 180, 76);
 }
