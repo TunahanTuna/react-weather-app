@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export const fetchWeathers = async (city) => {
+export const fetchWeathers = async (city, setIsLoading) => {
   const { data } = await axios.get(
     import.meta.env.VITE_WEATHER_API_URL +
       city +
