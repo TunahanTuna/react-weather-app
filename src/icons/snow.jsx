@@ -1,53 +1,206 @@
 import * as React from "react";
-const snow = (props) => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 98.7 72.29" {...props}>
-    <defs>
-      <style>
-        {
-          ".cls-2,.cls-3{fill:none;stroke-miterlimit:10;stroke:#231f20}.cls-2{stroke-linecap:round}"
-        }
-      </style>
-    </defs>
-    <title>{"snow Asset 203colored"}</title>
-    <g id="Layer_2" data-name="Layer 2">
-      <g id="Layer_1-2" data-name="Layer 1">
+const snow = (props) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      xmlnsXlink="http://www.w3.org/1999/xlink"
+      viewBox="0 0 64 64"
+    >
+      <defs>
+        <linearGradient
+          id="b"
+          x1="22.56"
+          x2="39.2"
+          y1="21.96"
+          y2="50.8"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop offset="0" stopColor="#f3f7fe"></stop>
+          <stop offset="0.45" stopColor="#f3f7fe"></stop>
+          <stop offset="1" stopColor="#deeafb"></stop>
+        </linearGradient>
+        <linearGradient
+          id="a"
+          x1="30.12"
+          x2="31.88"
+          y1="43.48"
+          y2="46.52"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop offset="0" stopColor="#86c3db"></stop>
+          <stop offset="0.45" stopColor="#86c3db"></stop>
+          <stop offset="1" stopColor="#5eafcf"></stop>
+        </linearGradient>
+        <linearGradient
+          id="c"
+          x1="29.67"
+          x2="32.33"
+          y1="42.69"
+          y2="47.31"
+          xlinkHref="#a"
+        ></linearGradient>
+        <linearGradient
+          id="d"
+          x1="23.12"
+          x2="24.88"
+          y1="43.48"
+          y2="46.52"
+          xlinkHref="#a"
+        ></linearGradient>
+        <linearGradient
+          id="e"
+          x1="22.67"
+          x2="25.33"
+          y1="42.69"
+          y2="47.31"
+          xlinkHref="#a"
+        ></linearGradient>
+        <linearGradient
+          id="f"
+          x1="37.12"
+          x2="38.88"
+          y1="43.48"
+          y2="46.52"
+          xlinkHref="#a"
+        ></linearGradient>
+        <linearGradient
+          id="g"
+          x1="36.67"
+          x2="39.33"
+          y1="42.69"
+          y2="47.31"
+          xlinkHref="#a"
+        ></linearGradient>
+      </defs>
+      <path
+        fill="url(#b)"
+        stroke="#e6effc"
+        strokeMiterlimit="10"
+        strokeWidth="0.5"
+        d="M46.5 31.5h-.32a10.49 10.49 0 00-19.11-8 7 7 0 00-10.57 6 7.21 7.21 0 00.1 1.14A7.5 7.5 0 0018 45.5a4.19 4.19 0 00.5 0v0h28a7 7 0 000-14z"
+      ></path>
+      <g>
+        <circle
+          cx="31"
+          cy="45"
+          r="1.25"
+          fill="none"
+          stroke="url(#a)"
+          strokeMiterlimit="10"
+        ></circle>
         <path
-          d="M59.26 31.64h37.89a15.06 15.06 0 0 0-12.1-14.06 15.87 15.87 0 0 0-7.62.47c-1.76.56-2.5.2-3.26-1.52a15.1 15.1 0 0 0-14.88-9.1A14.82 14.82 0 0 0 52 9.93c-1.62 1.06-2.55.86-3.63-.79a16.47 16.47 0 0 0-30.13 6.18c-.53 3.41-1.13 3.15-3.77 3.45-12.16 0-13 12.67-12.95 12.87h38.09"
-          style={{
-            fill: "#cae3f6",
-          }}
-        />
-        <path
-          d="m47.46 42.9 1.25-.77M48.71 53.98l-1.22-.7M47.49 48.07l4.62 4.61M52.55 51.38l-1.36.35-.34 1.42M52.18 43.4l-4.71 4.74M50.81 43.04l.36 1.36 1.42.33M54.12 48.07h-6.63M53.41 46.85l-.71 1.21.77 1.24"
-          className="cls-2"
-        />
-        <path d="M47.49 54.36V41.48" className="cls-3" />
-        <path
-          d="M47.49 54.6V41.48M47.5 53.18l-1.24.77M46.26 42.1l1.21.71M47.47 48.01l-4.62-4.61M42.42 44.71l1.35-.36.34-1.42M42.79 52.68l4.71-4.74M44.15 53.04l-.35-1.35-1.42-.34M40.85 48.01h6.62M41.56 49.23l.71-1.21-.77-1.24M71.78 42.9l1.25-.77M73.03 53.98l-1.22-.7M71.81 48.07l4.62 4.61M76.87 51.38l-1.36.35-.34 1.42M76.5 43.4l-4.71 4.74M75.13 43.04l.36 1.36 1.42.33M78.44 48.07h-6.63M77.73 46.85l-.71 1.21.77 1.24"
-          className="cls-2"
-        />
-        <path d="M71.81 54.36V41.48" className="cls-3" />
-        <path
-          d="M71.81 54.6V41.48M71.82 53.18l-1.24.77M70.58 42.1l1.21.71M71.79 48.01l-4.62-4.61M66.74 44.71l1.35-.36.34-1.42M67.11 52.68l4.71-4.74M68.47 53.04l-.36-1.35-1.42-.34M65.17 48.01h6.62M65.88 49.23l.7-1.21-.76-1.24M57.34 60.09l1.24-.77M58.58 71.18l-1.21-.71M57.36 65.26l4.63 4.61M62.42 68.57l-1.36.35-.33 1.42M62.05 60.59l-4.71 4.74M60.69 60.23l.35 1.36 1.42.33M63.99 65.26h-6.63M63.28 64.04l-.71 1.21.77 1.24"
-          className="cls-2"
-        />
-        <path d="M57.36 71.55V58.67" className="cls-3" />
-        <path
-          d="M57.36 71.79V58.67M57.37 70.37l-1.24.77M56.13 59.29l1.21.71M57.35 65.2l-4.63-4.61M52.29 61.9l1.36-.36.33-1.42M52.66 69.87l4.71-4.74M54.02 70.24l-.35-1.36-1.42-.34M50.72 65.2h6.63M51.43 66.43l.71-1.22-.77-1.24"
-          className="cls-2"
-        />
-        <path
-          d="M59.26 31.64h37.89a15.06 15.06 0 0 0-12.1-14.06 15.87 15.87 0 0 0-7.62.47c-1.76.56-2.5.2-3.26-1.52a15.1 15.1 0 0 0-14.88-9.1A14.82 14.82 0 0 0 52 9.93c-1.62 1.06-2.55.86-3.63-.79a16.47 16.47 0 0 0-30.13 6.18c-.53 3.41-1.13 3.15-3.77 3.45-12.16 0-13 12.67-12.95 12.87h38.09"
-          style={{
-            stroke: "#000",
-            strokeWidth: 3,
-            fill: "none",
-            strokeMiterlimit: 10,
-          }}
-        />
-        <path d="M49.24 34.32a2.64 2.64 0 0 1-2.7-2.73 2.71 2.71 0 0 1 5.41 0 2.65 2.65 0 0 1-2.71 2.73Z" />
+          fill="none"
+          stroke="url(#c)"
+          strokeLinecap="round"
+          strokeMiterlimit="10"
+          d="M33.17 46.25l-1.09-.63m-2.16-1.24l-1.09-.63M31 42.5v1.25m0 3.75v-1.25m-1.08-.63l-1.09.63m4.34-2.5l-1.09.63"
+        ></path>
+        <animateTransform
+          additive="sum"
+          attributeName="transform"
+          dur="4s"
+          repeatCount="indefinite"
+          type="translate"
+          values="-1 -6; 1 12"
+        ></animateTransform>
+        <animateTransform
+          additive="sum"
+          attributeName="transform"
+          dur="9s"
+          repeatCount="indefinite"
+          type="rotate"
+          values="0 31 45; 360 31 45"
+        ></animateTransform>
+        <animate
+          attributeName="opacity"
+          dur="4s"
+          repeatCount="indefinite"
+          values="0;1;1;1;0"
+        ></animate>
       </g>
-    </g>
-  </svg>
-);
+      <g>
+        <circle
+          cx="24"
+          cy="45"
+          r="1.25"
+          fill="none"
+          stroke="url(#d)"
+          strokeMiterlimit="10"
+        ></circle>
+        <path
+          fill="none"
+          stroke="url(#e)"
+          strokeLinecap="round"
+          strokeMiterlimit="10"
+          d="M26.17 46.25l-1.09-.63m-2.16-1.24l-1.09-.63M24 42.5v1.25m0 3.75v-1.25m-1.08-.63l-1.09.63m4.34-2.5l-1.09.63"
+        ></path>
+        <animateTransform
+          additive="sum"
+          attributeName="transform"
+          begin="-2s"
+          dur="4s"
+          repeatCount="indefinite"
+          type="translate"
+          values="1 -6; -1 12"
+        ></animateTransform>
+        <animateTransform
+          additive="sum"
+          attributeName="transform"
+          dur="9s"
+          repeatCount="indefinite"
+          type="rotate"
+          values="0 24 45; 360 24 45"
+        ></animateTransform>
+        <animate
+          attributeName="opacity"
+          begin="-2s"
+          dur="4s"
+          repeatCount="indefinite"
+          values="0;1;1;1;0"
+        ></animate>
+      </g>
+      <g>
+        <circle
+          cx="38"
+          cy="45"
+          r="1.25"
+          fill="none"
+          stroke="url(#f)"
+          strokeMiterlimit="10"
+        ></circle>
+        <path
+          fill="none"
+          stroke="url(#g)"
+          strokeLinecap="round"
+          strokeMiterlimit="10"
+          d="M40.17 46.25l-1.09-.63m-2.16-1.24l-1.09-.63M38 42.5v1.25m0 3.75v-1.25m-1.08-.63l-1.09.63m4.34-2.5l-1.09.63"
+        ></path>
+        <animateTransform
+          additive="sum"
+          attributeName="transform"
+          begin="-1s"
+          dur="4s"
+          repeatCount="indefinite"
+          type="translate"
+          values="1 -6; -1 12"
+        ></animateTransform>
+        <animateTransform
+          additive="sum"
+          attributeName="transform"
+          dur="9s"
+          repeatCount="indefinite"
+          type="rotate"
+          values="0 38 45; 360 38 45"
+        ></animateTransform>
+        <animate
+          attributeName="opacity"
+          begin="-1s"
+          dur="4s"
+          repeatCount="indefinite"
+          values="0;1;1;1;0"
+        ></animate>
+      </g>
+    </svg>
+  );
+};
 export default { item: snow, name: "snow" };

@@ -52,8 +52,8 @@
   justify-content: center;
   align-items: center;
   padding: 1em;
-  background-color: burlywood;
-  color: black;
+  background-color: rgb(218, 94, 201);
+  color: #250119;
   margin: 0.3em;
   padding: 1.5em;
   border-radius: 1em;
@@ -80,7 +80,7 @@
 }
 .today {
   font-weight: bold;
-  background-color: rgb(156, 158, 55);
+  background-color: rgb(243, 74, 173);
 }
 .day-seletor--container {
   padding: 0 0 2em 0;
@@ -91,15 +91,15 @@ select {
   padding: 1em;
   border-radius: 1em;
   min-width: 200px;
-  background-color: burlywood;
-  color: black;
+  background-color: rgb(218, 94, 201);
+  color: #250119;
   font-weight: bold;
 }
 option {
   padding: 1em;
   border-radius: 1em;
   min-width: 200px;
-  background-color: burlywood;
-  color: black;
+  background-color: rgb(218, 94, 201);
+  color: #250119;
   font-weight: bold;
 }

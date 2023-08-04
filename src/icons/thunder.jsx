@@ -1,32 +1,55 @@
 import * as React from "react";
-const thunder = (props) => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 98.7 47.07" {...props}>
-    <title>{"thunder Asset 208colored"}</title>
-    <g data-name="Layer 2">
-      <g data-name="Layer 1">
-        <path
-          d="M61.26 31.64h35.89a15.06 15.06 0 0 0-12.1-14.06 15.87 15.87 0 0 0-7.62.47c-1.76.56-2.5.2-3.26-1.52a15.1 15.1 0 0 0-14.88-9.1A14.82 14.82 0 0 0 52 9.93c-1.62 1.06-2.55.86-3.63-.79a16.47 16.47 0 0 0-30.13 6.18c-.53 3.41-1.13 3.15-3.77 3.45-12.16 0-13 12.67-12.95 12.87h35.09"
-          style={{
-            fill: "#cae3f6",
-          }}
-        />
-        <path
-          d="M61.26 31.64h35.89a15.06 15.06 0 0 0-12.1-14.06 15.87 15.87 0 0 0-7.62.47c-1.76.56-2.5.2-3.26-1.52a15.1 15.1 0 0 0-14.88-9.1A14.82 14.82 0 0 0 52 9.93c-1.62 1.06-2.55.86-3.63-.79a16.47 16.47 0 0 0-30.13 6.18c-.53 3.41-1.13 3.15-3.77 3.45-12.16 0-13 12.67-12.95 12.87h35.09"
-          style={{
-            fill: "none",
-            stroke: "#231f20",
-            strokeMiterlimit: 10,
-            strokeWidth: 3,
-          }}
-        />
-        <path
-          d="m56.48 20.29-11.77 12.7-1.25-2.69 12.12.61 2.4.12-1.64 1.61-14.76 14.43 13.24-15.83.76 1.73-12.12.61-3.42.17 2.16-2.86 10.45-13.82 3.83 3.22z"
-          style={{
-            fill: "#231f20",
-          }}
-        />
-      </g>
-    </g>
-  </svg>
-);
+const thunder = (props) => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+      <defs>
+        <linearGradient
+          id="a"
+          x1="22.56"
+          x2="39.2"
+          y1="21.96"
+          y2="50.8"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop offset="0" stopColor="#f3f7fe"></stop>
+          <stop offset="0.45" stopColor="#f3f7fe"></stop>
+          <stop offset="1" stopColor="#deeafb"></stop>
+        </linearGradient>
+        <linearGradient
+          id="b"
+          x1="26.74"
+          x2="35.76"
+          y1="37.88"
+          y2="53.52"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop offset="0" stopColor="#f7b23b"></stop>
+          <stop offset="0.45" stopColor="#f7b23b"></stop>
+          <stop offset="1" stopColor="#f59e0b"></stop>
+        </linearGradient>
+      </defs>
+      <path
+        fill="url(#a)"
+        stroke="#e6effc"
+        strokeMiterlimit="10"
+        strokeWidth="0.5"
+        d="M46.5 31.5h-.32a10.49 10.49 0 00-19.11-8 7 7 0 00-10.57 6 7.21 7.21 0 00.1 1.14A7.5 7.5 0 0018 45.5a4.19 4.19 0 00.5 0v0h28a7 7 0 000-14z"
+      ></path>
+      <path
+        fill="url(#b)"
+        stroke="#f6a823"
+        strokeMiterlimit="10"
+        strokeWidth="0.5"
+        d="M30 36l-4 12h4l-2 10 10-14h-6l4-8h-6z"
+      >
+        <animate
+          attributeName="opacity"
+          dur="2s"
+          repeatCount="indefinite"
+          values="1; 1; 1; 1; 1; 1; 0.1; 1; 0.1; 1; 1; 0.1; 1; 0.1; 1"
+        ></animate>
+      </path>
+    </svg>
+  );
+};
 export default { item: thunder, name: "thunder" };

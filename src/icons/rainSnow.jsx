@@ -1,41 +1,249 @@
 import * as React from "react";
-const rainSnow = (props) => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 98.7 70.09" {...props}>
-    <defs>
-      <style>
-        {
-          ".cls-1{fill:#cae3f6}.cls-2,.cls-3,.cls-4{fill:none;stroke-miterlimit:10}.cls-2,.cls-3{stroke:#231f20}.cls-2{stroke-linecap:round}.cls-4{stroke:#000;stroke-width:3px}"
-        }
-      </style>
-    </defs>
-    <title>{"rain-snow Asset 213colored"}</title>
-    <g id="Layer_2" data-name="Layer 2">
-      <g id="Layer_1-2" data-name="Layer 1">
+const rainSnow = (props) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      xmlnsXlink="http://www.w3.org/1999/xlink"
+      viewBox="0 0 64 64"
+    >
+      <defs>
+        <linearGradient
+          id="c"
+          x1="22.56"
+          x2="39.2"
+          y1="21.96"
+          y2="50.8"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop offset="0" stopColor="#f3f7fe"></stop>
+          <stop offset="0.45" stopColor="#f3f7fe"></stop>
+          <stop offset="1" stopColor="#deeafb"></stop>
+        </linearGradient>
+        <linearGradient
+          id="a"
+          x1="23.12"
+          x2="24.88"
+          y1="43.48"
+          y2="46.52"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop offset="0" stopColor="#86c3db"></stop>
+          <stop offset="0.45" stopColor="#86c3db"></stop>
+          <stop offset="1" stopColor="#5eafcf"></stop>
+        </linearGradient>
+        <linearGradient
+          id="d"
+          x1="22.67"
+          x2="25.33"
+          y1="42.69"
+          y2="47.31"
+          xlinkHref="#a"
+        ></linearGradient>
+        <linearGradient
+          id="e"
+          x1="37.12"
+          x2="38.88"
+          y1="43.48"
+          y2="46.52"
+          xlinkHref="#a"
+        ></linearGradient>
+        <linearGradient
+          id="f"
+          x1="36.67"
+          x2="39.33"
+          y1="42.69"
+          y2="47.31"
+          xlinkHref="#a"
+        ></linearGradient>
+        <linearGradient
+          id="b"
+          x1="23.31"
+          x2="24.69"
+          y1="44.3"
+          y2="46.7"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop offset="0" stopColor="#4286ee"></stop>
+          <stop offset="0.45" stopColor="#4286ee"></stop>
+          <stop offset="1" stopColor="#0950bc"></stop>
+        </linearGradient>
+        <linearGradient
+          id="g"
+          x1="30.31"
+          x2="31.69"
+          y1="44.3"
+          y2="46.7"
+          xlinkHref="#b"
+        ></linearGradient>
+        <linearGradient
+          id="h"
+          x1="37.31"
+          x2="38.69"
+          y1="44.3"
+          y2="46.7"
+          xlinkHref="#b"
+        ></linearGradient>
+      </defs>
+      <path
+        fill="url(#c)"
+        stroke="#e6effc"
+        strokeMiterlimit="10"
+        strokeWidth="0.5"
+        d="M46.5 31.5h-.32a10.49 10.49 0 00-19.11-8 7 7 0 00-10.57 6 7.21 7.21 0 00.1 1.14A7.5 7.5 0 0018 45.5a4.19 4.19 0 00.5 0v0h28a7 7 0 000-14z"
+      ></path>
+      <g>
+        <circle
+          cx="24"
+          cy="45"
+          r="1.25"
+          fill="none"
+          stroke="url(#a)"
+          strokeMiterlimit="10"
+        ></circle>
         <path
-          d="M71.91 40.49c-2.48 1.51-4.72 2.78-6.85 4.21a4.44 4.44 0 0 0 3.36 8 4.5 4.5 0 0 0 3.47-4.36c.11-2.48.02-4.96.02-7.85ZM59.26 31.64h37.89a15.06 15.06 0 0 0-12.1-14.06 15.87 15.87 0 0 0-7.62.47c-1.76.56-2.5.2-3.26-1.52a15.1 15.1 0 0 0-14.88-9.1A14.82 14.82 0 0 0 52 9.93c-1.62 1.06-2.55.86-3.63-.79a16.47 16.47 0 0 0-30.13 6.18c-.53 3.41-1.13 3.15-3.77 3.45-12.16 0-13 12.67-12.95 12.87h38.09"
-          className="cls-1"
-        />
-        <path
-          d="m47.46 40.7 1.25-.77M48.71 51.78l-1.22-.7M47.49 45.87l4.62 4.61M52.55 49.18l-1.36.35-.34 1.42M52.18 41.2l-4.71 4.74M50.81 40.84l.36 1.36 1.42.33M54.12 45.87h-6.63M53.41 44.65l-.71 1.21.77 1.24"
-          className="cls-2"
-        />
-        <path d="M47.49 52.16V39.28" className="cls-3" />
-        <path
-          d="M47.49 52.4V39.28M47.5 50.98l-1.24.77M46.26 39.9l1.21.71M47.47 45.81l-4.62-4.61M42.42 42.51l1.35-.36.34-1.42M42.79 50.48l4.71-4.74M44.15 50.84l-.35-1.35-1.42-.34M40.85 45.81h6.62M41.56 47.03l.71-1.21-.77-1.24M56.34 57.89l1.24-.76M57.58 68.98l-1.21-.71M56.36 63.06l4.63 4.61M61.42 66.37l-1.36.35-.33 1.42M61.05 58.39l-4.71 4.74M59.69 58.03l.35 1.36 1.42.33M62.99 63.06h-6.63M62.28 61.84l-.71 1.21.77 1.24"
-          className="cls-2"
-        />
-        <path d="M56.36 69.35V56.48" className="cls-3" />
-        <path
-          d="M56.36 69.59V56.48M56.37 68.17l-1.24.77M55.13 57.09l1.21.71M56.35 63l-4.63-4.61M51.29 59.7l1.36-.36.33-1.42M51.66 67.67l4.71-4.74M53.02 68.04l-.35-1.36-1.42-.34M49.72 63h6.63M50.43 64.23l.71-1.22-.77-1.24"
-          className="cls-2"
-        />
-        <path
-          d="M71.91 40.49c-2.48 1.51-4.72 2.78-6.85 4.21a4.44 4.44 0 0 0 3.36 8 4.5 4.5 0 0 0 3.47-4.36c.11-2.48.02-4.96.02-7.85ZM59.26 31.64h37.89a15.06 15.06 0 0 0-12.1-14.06 15.87 15.87 0 0 0-7.62.47c-1.76.56-2.5.2-3.26-1.52a15.1 15.1 0 0 0-14.88-9.1A14.82 14.82 0 0 0 52 9.93c-1.62 1.06-2.55.86-3.63-.79a16.47 16.47 0 0 0-30.13 6.18c-.53 3.41-1.13 3.15-3.77 3.45-12.16 0-13 12.67-12.95 12.87h38.09"
-          className="cls-4"
-        />
-        <path d="M49.24 34.32a2.64 2.64 0 0 1-2.7-2.73 2.71 2.71 0 0 1 5.41 0 2.65 2.65 0 0 1-2.71 2.73Z" />
+          fill="none"
+          stroke="url(#d)"
+          strokeLinecap="round"
+          strokeMiterlimit="10"
+          d="M26.17 46.25l-1.09-.63m-2.16-1.24l-1.09-.63M24 42.5v1.25m0 3.75v-1.25m-1.08-.63l-1.09.63m4.34-2.5l-1.09.63"
+        ></path>
+        <animateTransform
+          additive="sum"
+          attributeName="transform"
+          begin="-2s"
+          dur="4s"
+          repeatCount="indefinite"
+          type="translate"
+          values="1 -6; -1 12"
+        ></animateTransform>
+        <animateTransform
+          additive="sum"
+          attributeName="transform"
+          dur="9s"
+          repeatCount="indefinite"
+          type="rotate"
+          values="0 24 45; 360 24 45"
+        ></animateTransform>
+        <animate
+          attributeName="opacity"
+          begin="-2s"
+          dur="4s"
+          repeatCount="indefinite"
+          values="0;1;1;1;0"
+        ></animate>
       </g>
-    </g>
-  </svg>
-);
+      <g>
+        <circle
+          cx="38"
+          cy="45"
+          r="1.25"
+          fill="none"
+          stroke="url(#e)"
+          strokeMiterlimit="10"
+        ></circle>
+        <path
+          fill="none"
+          stroke="url(#f)"
+          strokeLinecap="round"
+          strokeMiterlimit="10"
+          d="M40.17 46.25l-1.09-.63m-2.16-1.24l-1.09-.63M38 42.5v1.25m0 3.75v-1.25m-1.08-.63l-1.09.63m4.34-2.5l-1.09.63"
+        ></path>
+        <animateTransform
+          additive="sum"
+          attributeName="transform"
+          begin="-1s"
+          dur="4s"
+          repeatCount="indefinite"
+          type="translate"
+          values="1 -6; -1 12"
+        ></animateTransform>
+        <animateTransform
+          additive="sum"
+          attributeName="transform"
+          dur="9s"
+          repeatCount="indefinite"
+          type="rotate"
+          values="0 38 45; 360 38 45"
+        ></animateTransform>
+        <animate
+          attributeName="opacity"
+          begin="-1s"
+          dur="4s"
+          repeatCount="indefinite"
+          values="0;1;1;1;0"
+        ></animate>
+      </g>
+      <path
+        fill="none"
+        stroke="url(#b)"
+        strokeLinecap="round"
+        strokeMiterlimit="10"
+        strokeWidth="2"
+        d="M24.08 45.01l-.16.98"
+      >
+        <animateTransform
+          attributeName="transform"
+          dur="1.5s"
+          repeatCount="indefinite"
+          type="translate"
+          values="1 -5; -2 10"
+        ></animateTransform>
+        <animate
+          attributeName="opacity"
+          dur="1.5s"
+          repeatCount="indefinite"
+          values="0;1;1;0"
+        ></animate>
+      </path>
+      <path
+        fill="none"
+        stroke="url(#g)"
+        strokeLinecap="round"
+        strokeMiterlimit="10"
+        strokeWidth="2"
+        d="M31.08 45.01l-.16.98"
+      >
+        <animateTransform
+          attributeName="transform"
+          begin="-0.5s"
+          dur="1.5s"
+          repeatCount="indefinite"
+          type="translate"
+          values="1 -5; -2 10"
+        ></animateTransform>
+        <animate
+          attributeName="opacity"
+          begin="-0.5s"
+          dur="1.5s"
+          repeatCount="indefinite"
+          values="0;1;1;0"
+        ></animate>
+      </path>
+      <path
+        fill="none"
+        stroke="url(#h)"
+        strokeLinecap="round"
+        strokeMiterlimit="10"
+        strokeWidth="2"
+        d="M38.08 45.01l-.16.98"
+      >
+        <animateTransform
+          attributeName="transform"
+          begin="-1s"
+          dur="1.5s"
+          repeatCount="indefinite"
+          type="translate"
+          values="1 -5; -2 10"
+        ></animateTransform>
+        <animate
+          attributeName="opacity"
+          begin="-1s"
+          dur="1.5s"
+          repeatCount="indefinite"
+          values="0;1;1;0"
+        ></animate>
+      </path>
+    </svg>
+  );
+};
 export default { item: rainSnow, name: "rain-snow" };

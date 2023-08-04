@@ -1,35 +1,119 @@
 import * as React from "react";
-const hail = (props) => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 98.7 66.61" {...props}>
-    <defs>
-      <style>
-        {
-          ".cls-1{fill:#cae3f6}.cls-2,.cls-3{fill:none;stroke:#000;stroke-miterlimit:10}.cls-2{stroke-width:3px}.cls-3{stroke-width:2px}"
-        }
-      </style>
-    </defs>
-    <title>{"hailAsset 204colored"}</title>
-    <g id="Layer_2" data-name="Layer 2">
-      <g id="Layer_1-2" data-name="Layer 1">
-        <path
-          d="m48.91 40.13 3.57.03 1.14 3.41 1.1 3.45-2.89 2.14-2.96 2.11-2.96-2.11-2.88-2.14 1.1-3.5 1.13-3.36 3.65-.03zM70.87 40.13l3.57.03 1.14 3.41 1.1 3.45-2.89 2.14-2.96 2.11-2.96-2.11-2.88-2.14 1.1-3.5 1.13-3.36 3.65-.03zM48.9 57.46l2.54.02.81 2.43.78 2.46-2.05 1.52-2.11 1.5-2.11-1.5-2.05-1.52.79-2.5.8-2.39 2.6-.02zM64.52 57.46l2.54.02.82 2.43.77 2.46-2.05 1.52-2.11 1.5-2.11-1.5-2.04-1.52.78-2.5.8-2.39 2.6-.02zM59.26 31.64h37.89a15.06 15.06 0 0 0-12.1-14.06 15.87 15.87 0 0 0-7.62.47c-1.76.56-2.5.2-3.26-1.52a15.1 15.1 0 0 0-14.88-9.1A14.82 14.82 0 0 0 52 9.93c-1.62 1.06-2.55.86-3.63-.79a16.47 16.47 0 0 0-30.13 6.18c-.53 3.41-1.13 3.15-3.77 3.45-12.16 0-13 12.67-12.95 12.87h38.09"
-          className="cls-1"
-        />
-        <path
-          d="m48.91 40.13 3.57.03 1.14 3.41 1.1 3.45-2.89 2.14-2.96 2.11-2.96-2.11-2.88-2.14 1.1-3.5 1.13-3.36 3.65-.03zM70.87 40.13l3.57.03 1.14 3.41 1.1 3.45-2.89 2.14-2.96 2.11-2.96-2.11-2.88-2.14 1.1-3.5 1.13-3.36 3.65-.03z"
-          className="cls-2"
-        />
-        <path
-          d="m48.9 57.46 2.54.02.81 2.43.78 2.46-2.05 1.52-2.11 1.5-2.11-1.5-2.05-1.52.79-2.5.8-2.39 2.6-.02zM64.52 57.46l2.54.02.82 2.43.77 2.46-2.05 1.52-2.11 1.5-2.11-1.5-2.04-1.52.78-2.5.8-2.39 2.6-.02z"
-          className="cls-3"
-        />
-        <path
-          d="M59.26 31.64h37.89a15.06 15.06 0 0 0-12.1-14.06 15.87 15.87 0 0 0-7.62.47c-1.76.56-2.5.2-3.26-1.52a15.1 15.1 0 0 0-14.88-9.1A14.82 14.82 0 0 0 52 9.93c-1.62 1.06-2.55.86-3.63-.79a16.47 16.47 0 0 0-30.13 6.18c-.53 3.41-1.13 3.15-3.77 3.45-12.16 0-13 12.67-12.95 12.87h38.09"
-          className="cls-2"
-        />
-        <path d="M49.24 34.32a2.64 2.64 0 0 1-2.7-2.73 2.71 2.71 0 0 1 5.41 0 2.65 2.65 0 0 1-2.71 2.73Z" />
-      </g>
-    </g>
-  </svg>
-);
+const hail = (props) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      xmlnsXlink="http://www.w3.org/1999/xlink"
+      viewBox="0 0 64 64"
+    >
+      <defs>
+        <linearGradient
+          id="b"
+          x1="22.56"
+          x2="39.2"
+          y1="21.96"
+          y2="50.8"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop offset="0" stopColor="#f3f7fe"></stop>
+          <stop offset="0.45" stopColor="#f3f7fe"></stop>
+          <stop offset="1" stopColor="#deeafb"></stop>
+        </linearGradient>
+        <linearGradient
+          id="a"
+          x1="23.25"
+          x2="24.75"
+          y1="43.7"
+          y2="46.3"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop offset="0" stopColor="#86c3db"></stop>
+          <stop offset="0.45" stopColor="#86c3db"></stop>
+          <stop offset="1" stopColor="#5eafcf"></stop>
+        </linearGradient>
+        <linearGradient
+          id="c"
+          x1="30.25"
+          x2="31.75"
+          y1="43.7"
+          y2="46.3"
+          xlinkHref="#a"
+        ></linearGradient>
+        <linearGradient
+          id="d"
+          x1="37.25"
+          x2="38.75"
+          y1="43.7"
+          y2="46.3"
+          xlinkHref="#a"
+        ></linearGradient>
+      </defs>
+      <path
+        fill="url(#b)"
+        stroke="#e6effc"
+        strokeMiterlimit="10"
+        strokeWidth="0.5"
+        d="M46.5 31.5h-.32a10.49 10.49 0 00-19.11-8 7 7 0 00-10.57 6 7.21 7.21 0 00.1 1.14A7.5 7.5 0 0018 45.5a4.19 4.19 0 00.5 0v0h28a7 7 0 000-14z"
+      ></path>
+      <path
+        fill="url(#a)"
+        d="M24 43.5a1.5 1.5 0 101.5 1.5 1.5 1.5 0 00-1.5-1.5z"
+      >
+        <animateTransform
+          attributeName="transform"
+          dur="0.6s"
+          repeatCount="indefinite"
+          type="translate"
+          values="1 -5; -2 18; -4 14"
+        ></animateTransform>
+        <animate
+          attributeName="opacity"
+          dur="0.6s"
+          repeatCount="indefinite"
+          values="1;1;0"
+        ></animate>
+      </path>
+      <path
+        fill="url(#c)"
+        d="M31 43.5a1.5 1.5 0 101.5 1.5 1.5 1.5 0 00-1.5-1.5z"
+      >
+        <animateTransform
+          attributeName="transform"
+          begin="-0.4s"
+          dur="0.6s"
+          repeatCount="indefinite"
+          type="translate"
+          values="1 -5; -2 18; -4 14"
+        ></animateTransform>
+        <animate
+          attributeName="opacity"
+          begin="-0.4s"
+          dur="0.6s"
+          repeatCount="indefinite"
+          values="1;1;0"
+        ></animate>
+      </path>
+      <path
+        fill="url(#d)"
+        d="M38 43.5a1.5 1.5 0 101.5 1.5 1.5 1.5 0 00-1.5-1.5z"
+      >
+        <animateTransform
+          attributeName="transform"
+          begin="-0.2s"
+          dur="0.6s"
+          repeatCount="indefinite"
+          type="translate"
+          values="1 -5; -2 18; -4 14"
+        ></animateTransform>
+        <animate
+          attributeName="opacity"
+          begin="-0.2s"
+          dur="0.6s"
+          repeatCount="indefinite"
+          values="1;1;0"
+        ></animate>
+      </path>
+    </svg>
+  );
+};
 export default { item: hail, name: "hail" };

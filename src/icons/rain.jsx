@@ -1,27 +1,131 @@
 import * as React from "react";
-const rain = (props) => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 98.7 70.44" {...props}>
-    <defs>
-      <style>
-        {
-          ".cls-1{fill:#cae3f6}.cls-2{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:3px}"
-        }
-      </style>
-    </defs>
-    <title>{"rainAsset 217colored"}</title>
-    <g id="Layer_2" data-name="Layer 2">
-      <g id="Layer_1-2" data-name="Layer 1">
-        <path
-          d="M50.29 40.29c-2.48 1.5-4.72 2.77-6.85 4.2a4.45 4.45 0 0 0 3.37 8 4.54 4.54 0 0 0 3.47-4.36c.05-2.48.01-4.95.01-7.84ZM71.91 40.29c-2.48 1.5-4.72 2.77-6.85 4.2a4.45 4.45 0 0 0 3.36 8 4.51 4.51 0 0 0 3.47-4.36c.11-2.48.02-4.95.02-7.84ZM58.29 56.67c-2.48 1.51-4.72 2.78-6.85 4.2a4.45 4.45 0 0 0 3.37 8 4.52 4.52 0 0 0 3.47-4.36c.05-2.51.01-4.95.01-7.84ZM59.26 31.64h37.89a15.06 15.06 0 0 0-12.1-14.06 15.87 15.87 0 0 0-7.62.47c-1.76.56-2.5.2-3.26-1.52a15.1 15.1 0 0 0-14.88-9.1A14.82 14.82 0 0 0 52 9.93c-1.62 1.06-2.55.86-3.63-.79a16.47 16.47 0 0 0-30.13 6.18c-.53 3.41-1.13 3.15-3.77 3.45-12.16 0-13 12.67-12.95 12.87h38.09"
-          className="cls-1"
-        />
-        <path
-          d="M50.29 40.29c-2.48 1.5-4.72 2.77-6.85 4.2a4.45 4.45 0 0 0 3.37 8 4.54 4.54 0 0 0 3.47-4.36c.05-2.48.01-4.95.01-7.84ZM71.91 40.29c-2.48 1.5-4.72 2.77-6.85 4.2a4.45 4.45 0 0 0 3.36 8 4.51 4.51 0 0 0 3.47-4.36c.11-2.48.02-4.95.02-7.84ZM58.29 56.67c-2.48 1.51-4.72 2.78-6.85 4.2a4.45 4.45 0 0 0 3.37 8 4.52 4.52 0 0 0 3.47-4.36c.05-2.51.01-4.95.01-7.84ZM59.26 31.64h37.89a15.06 15.06 0 0 0-12.1-14.06 15.87 15.87 0 0 0-7.62.47c-1.76.56-2.5.2-3.26-1.52a15.1 15.1 0 0 0-14.88-9.1A14.82 14.82 0 0 0 52 9.93c-1.62 1.06-2.55.86-3.63-.79a16.47 16.47 0 0 0-30.13 6.18c-.53 3.41-1.13 3.15-3.77 3.45-12.16 0-13 12.67-12.95 12.87h38.09"
-          className="cls-2"
-        />
-        <path d="M49.24 34.32a2.64 2.64 0 0 1-2.7-2.73 2.71 2.71 0 0 1 5.41 0 2.65 2.65 0 0 1-2.71 2.73Z" />
-      </g>
-    </g>
-  </svg>
-);
+const rain = (props) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      xmlnsXlink="http://www.w3.org/1999/xlink"
+      viewBox="0 0 64 64"
+    >
+      <defs>
+        <linearGradient
+          id="b"
+          x1="22.56"
+          x2="39.2"
+          y1="21.96"
+          y2="50.8"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop offset="0" stopColor="#f3f7fe"></stop>
+          <stop offset="0.45" stopColor="#f3f7fe"></stop>
+          <stop offset="1" stopColor="#deeafb"></stop>
+        </linearGradient>
+        <linearGradient
+          id="a"
+          x1="22.53"
+          x2="25.47"
+          y1="42.95"
+          y2="48.05"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop offset="0" stopColor="#4286ee"></stop>
+          <stop offset="0.45" stopColor="#4286ee"></stop>
+          <stop offset="1" stopColor="#0950bc"></stop>
+        </linearGradient>
+        <linearGradient
+          id="c"
+          x1="29.53"
+          x2="32.47"
+          y1="42.95"
+          y2="48.05"
+          xlinkHref="#a"
+        ></linearGradient>
+        <linearGradient
+          id="d"
+          x1="36.53"
+          x2="39.47"
+          y1="42.95"
+          y2="48.05"
+          xlinkHref="#a"
+        ></linearGradient>
+      </defs>
+      <path
+        fill="url(#b)"
+        stroke="#e6effc"
+        strokeMiterlimit="10"
+        strokeWidth="0.5"
+        d="M46.5 31.5h-.32a10.49 10.49 0 00-19.11-8 7 7 0 00-10.57 6 7.21 7.21 0 00.1 1.14A7.5 7.5 0 0018 45.5a4.19 4.19 0 00.5 0v0h28a7 7 0 000-14z"
+      ></path>
+      <path
+        fill="none"
+        stroke="url(#a)"
+        strokeLinecap="round"
+        strokeMiterlimit="10"
+        strokeWidth="2"
+        d="M24.39 43.03l-.78 4.94"
+      >
+        <animateTransform
+          attributeName="transform"
+          dur="0.7s"
+          repeatCount="indefinite"
+          type="translate"
+          values="1 -5; -2 10"
+        ></animateTransform>
+        <animate
+          attributeName="opacity"
+          dur="0.7s"
+          repeatCount="indefinite"
+          values="0;1;1;0"
+        ></animate>
+      </path>
+      <path
+        fill="none"
+        stroke="url(#c)"
+        strokeLinecap="round"
+        strokeMiterlimit="10"
+        strokeWidth="2"
+        d="M31.39 43.03l-.78 4.94"
+      >
+        <animateTransform
+          attributeName="transform"
+          begin="-0.4s"
+          dur="0.7s"
+          repeatCount="indefinite"
+          type="translate"
+          values="1 -5; -2 10"
+        ></animateTransform>
+        <animate
+          attributeName="opacity"
+          begin="-0.4s"
+          dur="0.7s"
+          repeatCount="indefinite"
+          values="0;1;1;0"
+        ></animate>
+      </path>
+      <path
+        fill="none"
+        stroke="url(#d)"
+        strokeLinecap="round"
+        strokeMiterlimit="10"
+        strokeWidth="2"
+        d="M38.39 43.03l-.78 4.94"
+      >
+        <animateTransform
+          attributeName="transform"
+          begin="-0.2s"
+          dur="0.7s"
+          repeatCount="indefinite"
+          type="translate"
+          values="1 -5; -2 10"
+        ></animateTransform>
+        <animate
+          attributeName="opacity"
+          begin="-0.2s"
+          dur="0.7s"
+          repeatCount="indefinite"
+          values="0;1;1;0"
+        ></animate>
+      </path>
+    </svg>
+  );
+};
 export default { item: rain, name: "rain" };

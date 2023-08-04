@@ -1,33 +1,157 @@
 import * as React from "react";
-const thunderRain = (props) => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 98.7 70.65" {...props}>
-    <defs>
-      <style>
-        {
-          ".cls-1{fill:#cae3f6}.cls-2{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:3px}"
-        }
-      </style>
-    </defs>
-    <title>{"thunder-rainAsset 207colored"}</title>
-    <g id="Layer_2" data-name="Layer 2">
-      <g id="Layer_1-2" data-name="Layer 1">
-        <path
-          d="M66.91 40.49c-2.48 1.51-4.72 2.78-6.85 4.21a4.44 4.44 0 0 0 3.36 8 4.5 4.5 0 0 0 3.47-4.36c.11-2.48.02-4.96.02-7.85ZM53.29 56.88c-2.48 1.5-4.72 2.77-6.85 4.2a4.44 4.44 0 0 0 3.37 8 4.52 4.52 0 0 0 3.47-4.35c.05-2.49.01-4.96.01-7.85ZM59.26 31.64h37.89a15.06 15.06 0 0 0-12.1-14.06 15.87 15.87 0 0 0-7.62.47c-1.76.56-2.5.2-3.26-1.52a15.1 15.1 0 0 0-14.88-9.1A14.82 14.82 0 0 0 52 9.93c-1.62 1.06-2.55.86-3.63-.79a16.47 16.47 0 0 0-30.13 6.18c-.53 3.41-1.13 3.15-3.77 3.45-12.16 0-13 12.67-12.95 12.87h38.09"
-          className="cls-1"
-        />
-        <path
-          d="M66.91 40.49c-2.48 1.51-4.72 2.78-6.85 4.21a4.44 4.44 0 0 0 3.36 8 4.5 4.5 0 0 0 3.47-4.36c.11-2.48.02-4.96.02-7.85ZM53.29 56.88c-2.48 1.5-4.72 2.77-6.85 4.2a4.44 4.44 0 0 0 3.37 8 4.52 4.52 0 0 0 3.47-4.35c.05-2.49.01-4.96.01-7.85ZM59.26 31.64h37.89a15.06 15.06 0 0 0-12.1-14.06 15.87 15.87 0 0 0-7.62.47c-1.76.56-2.5.2-3.26-1.52a15.1 15.1 0 0 0-14.88-9.1A14.82 14.82 0 0 0 52 9.93c-1.62 1.06-2.55.86-3.63-.79a16.47 16.47 0 0 0-30.13 6.18c-.53 3.41-1.13 3.15-3.77 3.45-12.16 0-13 12.67-12.95 12.87h38.09"
-          className="cls-2"
-        />
-        <path d="M49.24 34.32a2.64 2.64 0 0 1-2.7-2.73 2.71 2.71 0 0 1 5.41 0 2.65 2.65 0 0 1-2.71 2.73Z" />
-        <path
-          d="M86.46 40.8 74.69 53.5l-1.25-2.69 12.12.61 2.4.12-1.65 1.61-14.75 14.43L84.8 51.75l.76 1.73-12.12.61-3.42.17 2.16-2.86 10.45-13.81 3.83 3.21z"
-          style={{
-            fill: "#231f20",
-          }}
-        />
-      </g>
-    </g>
-  </svg>
-);
+const thunderRain = (props) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      xmlnsXlink="http://www.w3.org/1999/xlink"
+      viewBox="0 0 64 64"
+    >
+      <defs>
+        <linearGradient
+          id="b"
+          x1="22.56"
+          x2="39.2"
+          y1="21.96"
+          y2="50.8"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop offset="0" stopColor="#f3f7fe"></stop>
+          <stop offset="0.45" stopColor="#f3f7fe"></stop>
+          <stop offset="1" stopColor="#deeafb"></stop>
+        </linearGradient>
+        <linearGradient
+          id="a"
+          x1="22.53"
+          x2="25.47"
+          y1="42.95"
+          y2="48.05"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop offset="0" stopColor="#4286ee"></stop>
+          <stop offset="0.45" stopColor="#4286ee"></stop>
+          <stop offset="1" stopColor="#0950bc"></stop>
+        </linearGradient>
+        <linearGradient
+          id="c"
+          x1="29.53"
+          x2="32.47"
+          y1="42.95"
+          y2="48.05"
+          xlinkHref="#a"
+        ></linearGradient>
+        <linearGradient
+          id="d"
+          x1="36.53"
+          x2="39.47"
+          y1="42.95"
+          y2="48.05"
+          xlinkHref="#a"
+        ></linearGradient>
+        <linearGradient
+          id="e"
+          x1="26.74"
+          x2="35.76"
+          y1="37.88"
+          y2="53.52"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop offset="0" stopColor="#f7b23b"></stop>
+          <stop offset="0.45" stopColor="#f7b23b"></stop>
+          <stop offset="1" stopColor="#f59e0b"></stop>
+        </linearGradient>
+      </defs>
+      <path
+        fill="url(#b)"
+        stroke="#e6effc"
+        strokeMiterlimit="10"
+        strokeWidth="0.5"
+        d="M46.5 31.5h-.32a10.49 10.49 0 00-19.11-8 7 7 0 00-10.57 6 7.21 7.21 0 00.1 1.14A7.5 7.5 0 0018 45.5a4.19 4.19 0 00.5 0v0h28a7 7 0 000-14z"
+      ></path>
+      <path
+        fill="none"
+        stroke="url(#a)"
+        strokeLinecap="round"
+        strokeMiterlimit="10"
+        strokeWidth="2"
+        d="M24.39 43.03l-.78 4.94"
+      >
+        <animateTransform
+          attributeName="transform"
+          dur="0.7s"
+          repeatCount="indefinite"
+          type="translate"
+          values="1 -5; -2 10"
+        ></animateTransform>
+        <animate
+          attributeName="opacity"
+          dur="0.7s"
+          repeatCount="indefinite"
+          values="0;1;1;0"
+        ></animate>
+      </path>
+      <path
+        fill="none"
+        stroke="url(#c)"
+        strokeLinecap="round"
+        strokeMiterlimit="10"
+        strokeWidth="2"
+        d="M31.39 43.03l-.78 4.94"
+      >
+        <animateTransform
+          attributeName="transform"
+          begin="-0.4s"
+          dur="0.7s"
+          repeatCount="indefinite"
+          type="translate"
+          values="1 -5; -2 10"
+        ></animateTransform>
+        <animate
+          attributeName="opacity"
+          begin="-0.4s"
+          dur="0.7s"
+          repeatCount="indefinite"
+          values="0;1;1;0"
+        ></animate>
+      </path>
+      <path
+        fill="none"
+        stroke="url(#d)"
+        strokeLinecap="round"
+        strokeMiterlimit="10"
+        strokeWidth="2"
+        d="M38.39 43.03l-.78 4.94"
+      >
+        <animateTransform
+          attributeName="transform"
+          begin="-0.2s"
+          dur="0.7s"
+          repeatCount="indefinite"
+          type="translate"
+          values="1 -5; -2 10"
+        ></animateTransform>
+        <animate
+          attributeName="opacity"
+          begin="-0.2s"
+          dur="0.7s"
+          repeatCount="indefinite"
+          values="0;1;1;0"
+        ></animate>
+      </path>
+      <path
+        fill="url(#e)"
+        stroke="#f6a823"
+        strokeMiterlimit="10"
+        strokeWidth="0.5"
+        d="M30 36l-4 12h4l-2 10 10-14h-6l4-8h-6z"
+      >
+        <animate
+          attributeName="opacity"
+          dur="2s"
+          repeatCount="indefinite"
+          values="1; 1; 1; 1; 1; 1; 0.1; 1; 0.1; 1; 1; 0.1; 1; 0.1; 1"
+        ></animate>
+      </path>
+    </svg>
+  );
+};
 export default { item: thunderRain, name: "thunder-rain" };

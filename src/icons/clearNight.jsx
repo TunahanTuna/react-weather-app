@@ -1,26 +1,45 @@
 import * as React from "react";
-const clearNight = (props) => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39.11 40.96" {...props}>
-    <title>{"clear-nightAsset 221colored"}</title>
-    <g data-name="Layer 2">
-      <g data-name="Layer 1">
-        <path
-          d="M30.56 34.05a13.57 13.57 0 1 1 0-27.13 13.79 13.79 0 0 1 3.71.52 19 19 0 1 0-13.79 32 18.94 18.94 0 0 0 13.78-5.94 14.15 14.15 0 0 1-3.7.55Z"
-          style={{
-            fill: "#f5b952",
-          }}
-        />
-        <path
-          d="M30.56 34.05a13.57 13.57 0 1 1 0-27.13 13.79 13.79 0 0 1 3.71.52 19 19 0 1 0-13.79 32 18.94 18.94 0 0 0 13.78-5.94 14.15 14.15 0 0 1-3.7.55Z"
-          style={{
-            fill: "none",
-            stroke: "#000",
-            strokeMiterlimit: 10,
-            strokeWidth: 3,
-          }}
-        />
-      </g>
-    </g>
-  </svg>
-);
+function clearNight() {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+      <defs>
+        <linearGradient
+          id="a"
+          x1="21.92"
+          x2="38.52"
+          y1="18.75"
+          y2="47.52"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop offset="0" stopColor="#86c3db"></stop>
+          <stop offset="0.45" stopColor="#86c3db"></stop>
+          <stop offset="1" stopColor="#5eafcf"></stop>
+          <animateTransform
+            attributeName="gradientTransform"
+            dur="10s"
+            repeatCount="indefinite"
+            type="rotate"
+            values="5 32 32; -15 32 32; 5 32 32"
+          ></animateTransform>
+        </linearGradient>
+      </defs>
+      <path
+        fill="url(#a)"
+        stroke="#72b9d5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="0.5"
+        d="M46.66 36.2a16.66 16.66 0 01-16.78-16.55 16.29 16.29 0 01.55-4.15A16.56 16.56 0 1048.5 36.1c-.61.06-1.22.1-1.84.1z"
+      >
+        <animateTransform
+          attributeName="transform"
+          dur="10s"
+          repeatCount="indefinite"
+          type="rotate"
+          values="-5 32 32; 15 32 32; -5 32 32"
+        ></animateTransform>
+      </path>
+    </svg>
+  );
+}
 export default { item: clearNight, name: "clear-night" };

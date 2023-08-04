@@ -1,43 +1,249 @@
 import * as React from "react";
-const sleet = (props) => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 98.7 48.25" {...props}>
-    <defs>
-      <style>
-        {
-          ".cls-2,.cls-3{fill:none;stroke-miterlimit:10;stroke:#231f20;stroke-width:2px}.cls-3{stroke-linecap:round}"
-        }
-      </style>
-    </defs>
-    <title>{"sleetAsset 214colored"}</title>
-    <g id="Layer_2" data-name="Layer 2">
-      <g id="Layer_1-2" data-name="Layer 1">
+const sleet = (props) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      xmlnsXlink="http://www.w3.org/1999/xlink"
+      viewBox="0 0 64 64"
+    >
+      <defs>
+        <linearGradient
+          id="c"
+          x1="22.56"
+          x2="39.2"
+          y1="21.96"
+          y2="50.8"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop offset="0" stopColor="#f3f7fe"></stop>
+          <stop offset="0.45" stopColor="#f3f7fe"></stop>
+          <stop offset="1" stopColor="#deeafb"></stop>
+        </linearGradient>
+        <linearGradient
+          id="a"
+          x1="23.12"
+          x2="24.88"
+          y1="43.48"
+          y2="46.52"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop offset="0" stopColor="#86c3db"></stop>
+          <stop offset="0.45" stopColor="#86c3db"></stop>
+          <stop offset="1" stopColor="#5eafcf"></stop>
+        </linearGradient>
+        <linearGradient
+          id="d"
+          x1="22.67"
+          x2="25.33"
+          y1="42.69"
+          y2="47.31"
+          xlinkHref="#a"
+        ></linearGradient>
+        <linearGradient
+          id="e"
+          x1="37.12"
+          x2="38.88"
+          y1="43.48"
+          y2="46.52"
+          xlinkHref="#a"
+        ></linearGradient>
+        <linearGradient
+          id="f"
+          x1="36.67"
+          x2="39.33"
+          y1="42.69"
+          y2="47.31"
+          xlinkHref="#a"
+        ></linearGradient>
+        <linearGradient
+          id="b"
+          x1="23.31"
+          x2="24.69"
+          y1="44.3"
+          y2="46.7"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop offset="0" stopColor="#4286ee"></stop>
+          <stop offset="0.45" stopColor="#4286ee"></stop>
+          <stop offset="1" stopColor="#0950bc"></stop>
+        </linearGradient>
+        <linearGradient
+          id="g"
+          x1="30.31"
+          x2="31.69"
+          y1="44.3"
+          y2="46.7"
+          xlinkHref="#b"
+        ></linearGradient>
+        <linearGradient
+          id="h"
+          x1="37.31"
+          x2="38.69"
+          y1="44.3"
+          y2="46.7"
+          xlinkHref="#b"
+        ></linearGradient>
+      </defs>
+      <path
+        fill="url(#c)"
+        stroke="#e6effc"
+        strokeMiterlimit="10"
+        strokeWidth="0.5"
+        d="M46.5 31.5h-.32a10.49 10.49 0 00-19.11-8 7 7 0 00-10.57 6 7.21 7.21 0 00.1 1.14A7.5 7.5 0 0018 45.5a4.19 4.19 0 00.5 0v0h28a7 7 0 000-14z"
+      ></path>
+      <g>
+        <circle
+          cx="24"
+          cy="45"
+          r="1.25"
+          fill="none"
+          stroke="url(#a)"
+          strokeMiterlimit="10"
+        ></circle>
         <path
-          d="M69.26 31.64h27.89a15.06 15.06 0 0 0-12.1-14.06 15.87 15.87 0 0 0-7.62.47c-1.76.56-2.5.2-3.26-1.52a15.1 15.1 0 0 0-14.88-9.1A14.82 14.82 0 0 0 52 9.93c-1.62 1.06-2.55.86-3.63-.79a16.47 16.47 0 0 0-30.13 6.18c-.53 3.41-1.13 3.15-3.77 3.45-12.16 0-13 12.67-12.95 12.87h28.09"
-          style={{
-            fill: "#cae3f6",
-          }}
-        />
-        <path d="M49.29 16.34v30.91" className="cls-2" />
-        <path
-          d="M49.29 15.76v31.49M49.27 19.16l2.98-1.84M52.25 45.77l-2.91-1.7M49.33 31.57l11.1 11.07M61.48 39.51l-3.26.86-.81 3.41M60.59 20.36 49.28 31.74M57.31 19.49l.85 3.26 3.42.81M65.24 31.57H49.33M63.54 28.64l-1.7 2.91 1.84 2.98"
-          className="cls-3"
-        />
-        <path d="M49.23 46.67V15.76" className="cls-2" />
-        <path
-          d="M49.23 47.25V15.76M49.26 43.85l-2.98 1.84M46.28 17.23l2.91 1.7M49.19 31.43 38.1 20.36M37.05 23.5l3.26-.86.81-3.41M37.94 42.64l11.31-11.37M41.22 43.52l-.86-3.26-3.41-.81M33.29 31.43h15.9M34.99 34.37l1.7-2.91-1.84-2.98"
-          className="cls-3"
-        />
-        <path
-          d="M69.26 31.64h27.89a15.06 15.06 0 0 0-12.1-14.06 15.87 15.87 0 0 0-7.62.47c-1.76.56-2.5.2-3.26-1.52a15.1 15.1 0 0 0-14.88-9.1A14.82 14.82 0 0 0 52 9.93c-1.62 1.06-2.55.86-3.63-.79a16.47 16.47 0 0 0-30.13 6.18c-.53 3.41-1.13 3.15-3.77 3.45-12.16 0-13 12.67-12.95 12.87h28.09"
-          style={{
-            stroke: "#000",
-            strokeWidth: 3,
-            fill: "none",
-            strokeMiterlimit: 10,
-          }}
-        />
+          fill="none"
+          stroke="url(#d)"
+          strokeLinecap="round"
+          strokeMiterlimit="10"
+          d="M26.17 46.25l-1.09-.63m-2.16-1.24l-1.09-.63M24 42.5v1.25m0 3.75v-1.25m-1.08-.63l-1.09.63m4.34-2.5l-1.09.63"
+        ></path>
+        <animateTransform
+          additive="sum"
+          attributeName="transform"
+          begin="-2s"
+          dur="4s"
+          repeatCount="indefinite"
+          type="translate"
+          values="1 -6; -1 12"
+        ></animateTransform>
+        <animateTransform
+          additive="sum"
+          attributeName="transform"
+          dur="9s"
+          repeatCount="indefinite"
+          type="rotate"
+          values="0 24 45; 360 24 45"
+        ></animateTransform>
+        <animate
+          attributeName="opacity"
+          begin="-2s"
+          dur="4s"
+          repeatCount="indefinite"
+          values="0;1;1;1;0"
+        ></animate>
       </g>
-    </g>
-  </svg>
-);
+      <g>
+        <circle
+          cx="38"
+          cy="45"
+          r="1.25"
+          fill="none"
+          stroke="url(#e)"
+          strokeMiterlimit="10"
+        ></circle>
+        <path
+          fill="none"
+          stroke="url(#f)"
+          strokeLinecap="round"
+          strokeMiterlimit="10"
+          d="M40.17 46.25l-1.09-.63m-2.16-1.24l-1.09-.63M38 42.5v1.25m0 3.75v-1.25m-1.08-.63l-1.09.63m4.34-2.5l-1.09.63"
+        ></path>
+        <animateTransform
+          additive="sum"
+          attributeName="transform"
+          begin="-1s"
+          dur="4s"
+          repeatCount="indefinite"
+          type="translate"
+          values="1 -6; -1 12"
+        ></animateTransform>
+        <animateTransform
+          additive="sum"
+          attributeName="transform"
+          dur="9s"
+          repeatCount="indefinite"
+          type="rotate"
+          values="0 38 45; 360 38 45"
+        ></animateTransform>
+        <animate
+          attributeName="opacity"
+          begin="-1s"
+          dur="4s"
+          repeatCount="indefinite"
+          values="0;1;1;1;0"
+        ></animate>
+      </g>
+      <path
+        fill="none"
+        stroke="url(#b)"
+        strokeLinecap="round"
+        strokeMiterlimit="10"
+        strokeWidth="2"
+        d="M24.08 45.01l-.16.98"
+      >
+        <animateTransform
+          attributeName="transform"
+          dur="1.5s"
+          repeatCount="indefinite"
+          type="translate"
+          values="1 -5; -2 10"
+        ></animateTransform>
+        <animate
+          attributeName="opacity"
+          dur="1.5s"
+          repeatCount="indefinite"
+          values="0;1;1;0"
+        ></animate>
+      </path>
+      <path
+        fill="none"
+        stroke="url(#g)"
+        strokeLinecap="round"
+        strokeMiterlimit="10"
+        strokeWidth="2"
+        d="M31.08 45.01l-.16.98"
+      >
+        <animateTransform
+          attributeName="transform"
+          begin="-0.5s"
+          dur="1.5s"
+          repeatCount="indefinite"
+          type="translate"
+          values="1 -5; -2 10"
+        ></animateTransform>
+        <animate
+          attributeName="opacity"
+          begin="-0.5s"
+          dur="1.5s"
+          repeatCount="indefinite"
+          values="0;1;1;0"
+        ></animate>
+      </path>
+      <path
+        fill="none"
+        stroke="url(#h)"
+        strokeLinecap="round"
+        strokeMiterlimit="10"
+        strokeWidth="2"
+        d="M38.08 45.01l-.16.98"
+      >
+        <animateTransform
+          attributeName="transform"
+          begin="-1s"
+          dur="1.5s"
+          repeatCount="indefinite"
+          type="translate"
+          values="1 -5; -2 10"
+        ></animateTransform>
+        <animate
+          attributeName="opacity"
+          begin="-1s"
+          dur="1.5s"
+          repeatCount="indefinite"
+          values="0;1;1;0"
+        ></animate>
+      </path>
+    </svg>
+  );
+};
 export default { item: sleet, name: "sleet" };

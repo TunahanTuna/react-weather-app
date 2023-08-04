@@ -1,37 +1,64 @@
 import * as React from "react";
-const partlyCloudyNight = (props) => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 102.12 54.41" {...props}>
-    <defs>
-      <style>
-        {".cls-3{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:3px}"}
-      </style>
-    </defs>
-    <title>{"partly-cloudy-nightAsset 219colored"}</title>
-    <g id="Layer_2" data-name="Layer 2">
-      <g id="Layer_1-2" data-name="Layer 1">
-        <path
-          d="M59.26 51.74h37.89a15.05 15.05 0 0 0-12.1-14.06 15.63 15.63 0 0 0-7.62.47c-1.76.56-2.5.2-3.26-1.53a15.1 15.1 0 0 0-14.88-9.09A14.81 14.81 0 0 0 52 30c-1.62 1.06-2.55.86-3.63-.78a16.42 16.42 0 0 0-16.86-7.32c-7 1.45-12.22 6.6-13.29 13.52-.53 3.41-1.13 3.14-3.77 3.45-12.16 0-13 12.67-12.95 12.87h38.11"
-          style={{
-            fill: "#cae3f6",
-          }}
-        />
-        <path
-          d="M99 17.47A10.77 10.77 0 1 1 84.35 1.93a15.07 15.07 0 1 0 12.94 24.48 15 15 0 0 0 3.19-11.48A10.56 10.56 0 0 1 99 17.47Z"
-          style={{
-            fill: "#f5b952",
-          }}
-        />
-        <path
-          d="M59.26 51.74h37.89a15.05 15.05 0 0 0-12.1-14.06 15.63 15.63 0 0 0-7.62.47c-1.76.56-2.5.2-3.26-1.53a15.1 15.1 0 0 0-14.88-9.09A14.81 14.81 0 0 0 52 30c-1.62 1.06-2.55.86-3.63-.78a16.42 16.42 0 0 0-16.86-7.32c-7 1.45-12.22 6.6-13.29 13.52-.53 3.41-1.13 3.14-3.77 3.45-12.16 0-13 12.67-12.95 12.87h38.11"
-          className="cls-3"
-        />
-        <path d="M49.24 54.41a2.64 2.64 0 0 1-2.7-2.72 2.71 2.71 0 1 1 5.41 0 2.64 2.64 0 0 1-2.71 2.72Z" />
-        <path
-          d="M99 17.47A10.77 10.77 0 1 1 84.35 1.93a15.07 15.07 0 1 0 12.94 24.48 15 15 0 0 0 3.19-11.48A10.56 10.56 0 0 1 99 17.47Z"
-          className="cls-3"
-        />
-      </g>
-    </g>
-  </svg>
-);
+const partlyCloudyNight = (props) => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+      <defs>
+        <linearGradient
+          id="a"
+          x1="13.58"
+          x2="24.15"
+          y1="15.57"
+          y2="33.87"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop offset="0" stopColor="#86c3db"></stop>
+          <stop offset="0.45" stopColor="#86c3db"></stop>
+          <stop offset="1" stopColor="#5eafcf"></stop>
+          <animateTransform
+            attributeName="gradientTransform"
+            dur="10s"
+            repeatCount="indefinite"
+            type="rotate"
+            values="10 19.22 24.293; -10 19.22 24.293; 10 19.22 24.293"
+          ></animateTransform>
+        </linearGradient>
+        <linearGradient
+          id="b"
+          x1="22.56"
+          x2="39.2"
+          y1="21.96"
+          y2="50.8"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop offset="0" stopColor="#f3f7fe"></stop>
+          <stop offset="0.45" stopColor="#f3f7fe"></stop>
+          <stop offset="1" stopColor="#deeafb"></stop>
+        </linearGradient>
+      </defs>
+      <path
+        fill="url(#a)"
+        stroke="#72b9d5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="0.5"
+        d="M29.33 26.68a10.61 10.61 0 01-10.68-10.54A10.5 10.5 0 0119 13.5a10.54 10.54 0 1011.5 13.11 11.48 11.48 0 01-1.17.07z"
+      >
+        <animateTransform
+          attributeName="transform"
+          dur="10s"
+          repeatCount="indefinite"
+          type="rotate"
+          values="-10 19.22 24.293; 10 19.22 24.293; -10 19.22 24.293"
+        ></animateTransform>
+      </path>
+      <path
+        fill="url(#b)"
+        stroke="#e6effc"
+        strokeMiterlimit="10"
+        strokeWidth="0.5"
+        d="M46.5 31.5h-.32a10.49 10.49 0 00-19.11-8 7 7 0 00-10.57 6 7.21 7.21 0 00.1 1.14A7.5 7.5 0 0018 45.5a4.19 4.19 0 00.5 0v0h28a7 7 0 000-14z"
+      ></path>
+    </svg>
+  );
+};
 export default { item: partlyCloudyNight, name: "partly-cloudy-night" };
