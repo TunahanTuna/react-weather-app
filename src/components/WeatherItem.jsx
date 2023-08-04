@@ -14,7 +14,12 @@ function WeatherItem({ weather }) {
         weekofDay.toLowerCase() === "today" ? "today" : ""
       }`}
     >
-      <div className="weather-day">{day}</div>
+      <div className="weather-day">
+        {weekofDay.toLowerCase() === "today" ||
+        weekofDay.toLowerCase() === "tomorrow"
+          ? weekofDay
+          : day}
+      </div>
       <div className="weather-icon">
         {icons && React.createElement(icons.item)}
       </div>
