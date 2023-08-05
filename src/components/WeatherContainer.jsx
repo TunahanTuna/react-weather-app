@@ -14,7 +14,6 @@ function WeatherContainer() {
       setWeathers(weathersData);
     };
     deneme();
-    console.log(weathers);
   }, [selected]);
   return (
     <div>
