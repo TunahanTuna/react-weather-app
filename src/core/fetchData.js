@@ -6,17 +6,18 @@ export const fetchWeathers = async (city, setIsLoading) => {
       city +
       import.meta.env.VITE_WEATHER_QUERY
   );
-  data?.currentConditions
-    ? (data.currentConditions.datetime = data?.days?.[0]?.datetime)
-    : "00.00.00";
   console.log(data?.currentConditions);
   return (
     (data &&
       data.days &&
       data.currentConditions &&
-      data.days.map((w, index) =>
-        index === 0 ? data.currentConditions : w
-      )) ||
+      data.days.map((w, index) => {
+        if (index === 0) {
+          w.icon = data.currentConditions.icon;
+          return w;
+        }
+        return w;
+      })) ||
     {}
   );
 };
